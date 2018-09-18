@@ -1,0 +1,36 @@
+<!-- Copyright (c) Microsoft. All rights reserved. -->
+
+<RelativeLayout android:id="@+id/item_person"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/text_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/image_person"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/image_person"
+        android:layout_alignRight="@id/image_person"
+        android:layout_alignTop="@id/image_person"
+        android:checked="false"/>
+
+</RelativeLayout>

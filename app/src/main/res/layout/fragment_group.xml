@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/text_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/warning_group"
+        android:textColor="#000000"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_margin="5dp"
+        />
+
+    <GridView
+        android:id="@+id/gridView_persons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_intro"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:verticalSpacing="5dp"
+        android:background="#E0E0E0"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatButton_appPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="@color/button_enabled_background"
+        android:src="@drawable/ic_add"/>
+</RelativeLayout>
